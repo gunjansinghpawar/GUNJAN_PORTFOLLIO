@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Project Name: Personal Portfolio Website
+Youtube: https://youtube.com/@devRasen
+Copyright: ©MdRasen -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUNJAN PORTFOLIO</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="LOGO.SVG.svg"  />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script>
+        function login() {
+  let userName = document.getElementById("username").value;
+  let passWord = document.getElementById("password").value;
+  if(userName == "admin" && passWord == "admin"){
+    window.location.href = "main.html";
+  }
+}
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"><span>GUNJAN</span>Portfolio</a>
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <a href="login-page.html" target="frame"><button class="bttn">SIGN-IN</button></a>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <main>
+            <div class="formsection">
+                <div class="login-form">
+                    <h2>SIGN IN</h2>
+                    <div class="username">
+                        <input type="text" placeholder="USERNAME" required id="username" max="10" min="8" style="background-color: white;">
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="PASSWORD" required id="password" max="10" min="8" style="background-color: white;">
+                    </div>
+                    <button onclick="login()">
+                        SIGN IN
+                    </button>
+                    <footer>DON'T HAVE ACCOUNT<a href="">SIGN UP</a></footer>
+
+                </div>
+            </div>
+        </main>
+</body>
+</html>
