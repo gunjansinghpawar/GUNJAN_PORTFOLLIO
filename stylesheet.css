@@ -9,6 +9,20 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* HTML: loader */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#ffa516 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#ffa516);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
 
 html {
   scroll-behavior: smooth;
@@ -59,12 +73,11 @@ img {
   padding: 30px;
   border-radius: 20px;
 }
-.login-form > button{
+.submit > button{
   background-color: #faca22;
   justify-content: center;
   text-align: center;
   font-size: 20px;
-  margin: 0 130px 10px 130px;
   border-radius: 20px;
   padding: 10px 50px;
 }
@@ -103,7 +116,11 @@ footer > a{
 }
 footer{
   text-align: center;
-
+}
+.submit{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .header-top .logo a {
   text-decoration: none;
@@ -391,6 +408,7 @@ footer{
   border-radius: 6px;
 }
 
+
 .contact-left form button {
   background: #000;
   color: #f7f7f7;
@@ -500,18 +518,72 @@ footer{
   .about-right .tab-contents ul li span {
     font-size: 18px;
   }
-
-  #testimonial .testimonial-list {
-    grid-gap: 20px;
+  .formsection{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0b0d19),
+    url(1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form{
+    background-color: rgba(0, 0, 0, 0.472);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .submit > button{
+    background-color: #faca22;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 50px;
+  }
+  .login-form > h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+  }
+  .username{
+    text-align: center;
+  }
+  .username > #username{
+    font-size: 15px;
+    background-color:transparent;
+    border: 2px solid #faca22;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+  footer > a{
+    margin: 0 0 0 5px;
+    color: #faca22;
+  }
+  .password{
+    text-align: center;
+  }
+  .password > #password{
+    font-size: 15px;
+    border: 2px solid #faca22;
+    background-color:transparent;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+  footer{
+    font-size: 15px;
   }
 
-  .testimonial-list .review {
-    padding: 30px 15px;
-  }
-
-  .review-by .info .name {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 560px) {
@@ -553,6 +625,72 @@ footer{
 
   .content .vl {
     display: none;
+  }
+  .formsection{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0b0d19),
+    url(1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form{
+    background-color: rgba(0, 0, 0, 0.472);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .submit > button{
+    background-color: #faca22;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    align-self: center;
+    border-radius: 20px;
+    padding: 10px 50px;
+  }
+  .login-form > h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+  }
+  .username{
+    text-align: center;
+  }
+  .username > #username{
+    font-size: 15px;
+    background-color:transparent;
+    border: 2px solid #faca22;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+  footer > a{
+    margin: 0 0 0 5px;
+    color: #faca22;
+  }
+  .password{
+    text-align: center;
+  }
+  .password > #password{
+    font-size: 15px;
+    border: 2px solid #faca22;
+    background-color:transparent;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+  footer{
+    font-size: 15px;
   }
 }
 
@@ -596,4 +734,70 @@ footer{
   .about-right .tab-contents ul li span {
     font-size: 16px;
   }
+  .formsection{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0b0d19),
+    url(1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form{
+    background-color: rgba(0, 0, 0, 0.472);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .submit > button{
+    background-color: #faca22;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 50px;
+  }
+  .login-form > h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+  }
+  .username{
+    text-align: center;
+  }
+  .username > #username{
+    font-size: 15px;
+    background-color:transparent;
+    border: 2px solid #faca22;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+  footer > a{
+    margin: 0 0 0 5px;
+    color: #faca22;
+  }
+  .password{
+    text-align: center;
+  }
+  .password > #password{
+    font-size: 15px;
+    border: 2px solid #faca22;
+    background-color:transparent;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+  footer{
+    font-size: 15px;
+  }
+  
 }
