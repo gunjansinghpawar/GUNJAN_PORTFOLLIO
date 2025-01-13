@@ -19,7 +19,7 @@
     <section id="header">
       <div class="header-top">
         <div class="logo">
-          <a href="#"><span>GUNJAN</span>Portfolio</a>
+          <a href="#"><span>GUNJAN </span>Portfolio</a>
         </div>
         <div class="nav-menu">
           <ul id="sidemenu">
@@ -27,7 +27,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#contact">Contact</a></li>
-            <a href="index.html"><button class="bttn">SIGN-IN</button></a>
+            <li><a href="#projects">Projects</a></li>
             <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -42,7 +42,7 @@
             i am a learner and a passionate web developer.I have learned so
             many thinks about web development and also it going on.
           </p>
-          <a href="resume.pdf" target="_blank" class="btn-cv" download>Download CV</a>
+          <a href="GunjanSinghResume.pdf" target="_blank" class="btn-cv" download>Download CV</a>
         </div>
         <div class="bottom-right">
           <a href="https://www.facebook.com/gunjansinghpawar"><i class="fa-brands fa-facebook"></i></a>
@@ -63,10 +63,9 @@
           <h3 class="title">Web Developer</h3>
         </div>
         <p class="desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-          suscipit neque voluptatum numquam vero excepturi vitae rerum dicta
-          vel commodi, aut, necessitatibus saepe culpa nihil porro magnam
-          atque possimus facilis.
+          "A passionate developer skilled in React and Node.js, dedicated to creating dynamic and user-friendly web
+          applications. Always eager to learn and implement the latest technologies to solve real-world problems
+          efficiently."
         </p>
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="openTab('skills')">
@@ -77,11 +76,14 @@
         </div>
         <div class="tab-contents active-tab" id="skills">
           <ul>
-            <li>
-              <span>Web Development</span><br /> Website Development
-            </li>
-            <li><span>Web Design</span><br />Web app Designing</li>
-            <li><span>Digital Marketing</span><br />Building business</li>
+            <li>(1)HTML5</li>
+            <li>(2)CSS3</li>
+            <li>(3)JAVASCRIPT</li>
+            <li>(4)REACT JS</li>
+            <li>(5)NODE JS</li>
+            <li>(6)EXPRESS JS</li>
+            <li>(7)MONGO DB</li>
+            <li>(8)BOOTSTRAP</li>
           </ul>
         </div>
         <div class="tab-contents" id="experience">
@@ -147,7 +149,129 @@
             performance and seamless user experience.
           </p>
         </div>
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>MERN Stack Developer</h2>
+          <p>
+            As a MERN Stack Developer, I specialize in building full-stack web applications using MongoDB, Express.js,
+            React, and Node.js. With expertise in creating dynamic, scalable, and responsive solutions, I design
+            intuitive user interfaces and robust backends. My skills include RESTful APIs, database management, and
+            seamless integration between front-end and back-end technologies.
+          </p>
+        </div>
       </div>
+    </section>
+    <section id="projects">
+      <div class="section-title">
+        <h2 class="sub-title">Projects</h2>
+        <h3 class="title">Some of My Recent Projects</h3>
+      </div>
+      <div class="project">
+        <div class="card">
+          <img src="netflix.png"
+            alt="Netflix">
+          <h2>Netflix UI Clone</h2>
+          <p>
+            A Netflix clone built using React. It features a sleek UI for browsing movies and TV shows,
+            user authentication, and a dynamic homepage. Enjoy seamless navigation and rich media content.
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="musicplayer.png"
+            alt="musicplayer">
+          <h2>My Music Player</h2>
+          <p>
+            My music player is a sleek, user-friendly application offering seamless audio playback, intuitive
+            controls, and a visually appealing interface, ensuring an enjoyable and immersive music-listening
+            experience
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="portfolio.png"
+            alt="portfolio">
+          <h2>Portfolio Code</h2>
+          <p>
+            "Welcome to my portfolio! Explore my journey as a developer through projects, achievements, and skills
+            showcased here. With expertise in web development, the MERN stack, and responsive design, I bring ideas to
+            life with clean and efficient code.".
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="djtoursandtravels.png"
+            alt="travel">
+          <h2>Travle Website</h2>
+          <p>
+            "DJ Tours and Travels is a dynamic full-stack travel platform built with the MERN stack. Explore stunning
+            destinations, plan trips, and book hassle-free experiences. With a user-friendly interface, real-time
+            updates, and secure transactions, we make your travel dreams a reality".
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="calc.png"
+            alt="calculator">
+          <h2>Simple Calculator</h2>
+          <p>
+            A user-friendly calculator built with HTML, CSS, and JavaScript. Performs basic arithmetic operations
+            (addition, subtraction, multiplication, division) with a clean interface and responsive design for seamless
+            usage across devices. Perfect for quick and easy calculations
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="coffee.png"
+            alt="coffee">
+          <h2>Coffee Website</h2>
+          <p>
+            "Discover the rich flavors of our premium coffee. Our website offers a seamless experience with responsive design, showcasing our diverse selection of coffee beans, brewing tips, and special offers. Explore, sip, and savor the perfect cup."
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="textutils.png"
+            alt="textutils">
+          <h2>Text Utils</h2>
+          <p>
+            "Text Utils is a practice website featuring various text manipulation tools, built using CodeWithHarry concepts. Users can explore features like text transformation, word counting, and more, to improve their coding skills and understanding of JavaScript functionalities."
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="library.png"
+            alt="library-system">
+          <h2>Library System</h2>
+          <p>
+            "Discover a seamless Library Management System built with MERN. Easily browse, borrow, and manage books. Streamline library operations with user-friendly features, real-time updates, and secure access. Perfect for students, librarians, and book enthusiasts!"
+          </p>
+          <div class="project-buttons">
+            <button onclick="redirectToRepository()">View Repository</button>
+            <button onclick="redirectToRepository()" target="_blank">Open </button>
+          </div>
+        </div>
     </section>
     <!-- Contact section -->
     <section id="contact">

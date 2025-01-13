@@ -26,3 +26,8 @@ function closeMenu() {
   sideMenu.style.right = "-200px";
 }
 
+function redirectToRepository() {
+  window.location.href = 'https://github.com/gunjansinghpawar/Netflix--React'; // Replace with your repository link
+}
+
+
