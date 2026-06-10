@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const fadeUpElements = document.querySelectorAll('.fade-up');
   fadeUpElements.forEach(elem => {
     gsap.fromTo(elem, 
-      { y: 50, opacity: 0 },
+      { y: 60, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 1.2,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: elem,
@@ -61,18 +61,55 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   });
 
+  // Staggered Cards Animation
+  const staggerContainers = document.querySelectorAll('.stagger-container');
+  staggerContainers.forEach(container => {
+    const items = container.children;
+    gsap.fromTo(items,
+      { y: 60, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: container,
+          start: 'top 80%',
+        }
+      }
+    );
+  });
+
+  // Animated Counters
+  const counters = document.querySelectorAll('.counter-val');
+  counters.forEach(counter => {
+    const target = parseInt(counter.getAttribute('data-target'));
+    gsap.fromTo(counter, 
+      { innerText: 0 },
+      {
+        innerText: target,
+        duration: 2,
+        ease: 'power2.out',
+        snap: { innerText: 1 },
+        scrollTrigger: {
+          trigger: counter,
+          start: 'top 85%',
+        }
+      }
+    );
+  });
+
   // Magnetic Buttons
   const magneticButtons = document.querySelectorAll('.magnetic-wrap');
   magneticButtons.forEach(btn => {
-    const inner = btn.querySelector('.btn');
-    if (!inner) return;
-
+    const inner = btn.querySelector('.btn') || btn.querySelector('a') || btn;
+    
     btn.addEventListener('mousemove', (e) => {
       const rect = btn.getBoundingClientRect();
       const h = rect.width / 2;
-      
       const x = e.clientX - rect.left - h;
-      const y = e.clientY - rect.top - h;
+      const y = e.clientY - rect.top - (rect.height / 2);
 
       gsap.to(inner, {
         x: x * 0.3,
@@ -105,5 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
         scrub: true
       }
     });
+  });
+
+  // Ensure ScrollTrigger calculates correctly after all images load
+  window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
   });
 });
