@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Gunjan Pawar</title>
+  <link rel="icon" type="image/x-icon" href="LOGO.SVG.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .project-hero {
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+    .project-header-img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-top: 2rem;
+    }
+    .project-meta {
+      display: flex;
+      gap: 3rem;
+      margin: 3rem 0;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .meta-item h4 {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .meta-item p {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .project-content p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor"></div>
+  <div class="page-transition">
+    <div class="loader-text">
+      <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span>
+    </div>
+  </div>
+
+  <nav class="navbar flex-between">
+    <a href="index.html" class="nav-logo">GUNJAN</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <div class="fs-menu">
+    <div class="fs-menu-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="project-hero container fade-up">
+      <h1 class="title-lg" id="project-title">Netflix UI Clone</h1>
+      <img src="netflix.png" alt="Project Banner" class="project-header-img" id="project-img">
+      
+      <div class="project-meta">
+        <div class="meta-item">
+          <h4>Role</h4>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="meta-item">
+          <h4>Tech Stack</h4>
+          <p>React, CSS</p>
+        </div>
+        <div class="meta-item">
+          <h4>Year</h4>
+          <p>2024</p>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3 class="title-md" style="margin-bottom: 1.5rem;">Overview</h3>
+        <p id="project-desc">
+          A Netflix clone built using React. It features a sleek UI for browsing movies and TV shows, user authentication, and a dynamic homepage. Enjoy seamless navigation and rich media content.
+        </p>
+        <div class="magnetic-wrap" style="margin-top: 2rem;">
+          <a href="#" class="btn btn-primary" id="repo-btn">View Repository</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container fade-up">
+    <div class="footer-content">
+      <div class="nav-logo">GUNJAN</div>
+      <div class="footer-links">
+        <a href="https://github.com/gunjansinghpawar" class="magnetic-wrap" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/gunjansinghpawar/" class="magnetic-wrap" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gunjan Pawar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

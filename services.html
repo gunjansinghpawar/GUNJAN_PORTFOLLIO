@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Gunjan Pawar</title>
+  <link rel="icon" type="image/x-icon" href="LOGO.SVG.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .page-header {
+      padding-top: 150px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    .service-card {
+      padding: 4rem 3rem;
+      border-radius: 20px;
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      transition: all 0.5s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(209, 255, 66, 0.05), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(209, 255, 66, 0.3);
+    }
+    .service-card:hover::before {
+      transform: translateX(100%);
+    }
+    .service-card i {
+      font-size: 3.5rem;
+      color: var(--accent-color);
+      margin-bottom: 2rem;
+    }
+    .service-card h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .service-card p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor"></div>
+  <div class="page-transition">
+    <div class="loader-text">
+      <span>O</span><span>F</span><span>F</span><span>E</span><span>R</span><span>I</span><span>N</span><span>G</span><span>S</span>
+    </div>
+  </div>
+
+  <nav class="navbar flex-between">
+    <a href="index.html" class="nav-logo">GUNJAN</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <div class="fs-menu">
+    <div class="fs-menu-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-header container fade-up">
+      <h1 class="title-lg">My <span class="text-accent">Services</span></h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto;">What I can do for you to bring your ideas to reality.</p>
+    </section>
+
+    <section class="section container">
+      <div class="services-grid">
+        
+        <div class="service-card fade-up">
+          <i class="fa-brands fa-battle-net"></i>
+          <h2>Website Designing</h2>
+          <p>
+            As a web designer, I blend creativity with technical skills to create visually stunning and user-friendly websites. My proficiency in HTML, CSS, JavaScript, and responsive design ensures optimal functionality across devices.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" style="animation-delay: 0.2s">
+          <i class="fa-solid fa-globe"></i>
+          <h2>Frontend Developer</h2>
+          <p>
+            As a passionate frontend developer, I bring a strong command of HTML, CSS, and JavaScript, coupled with experience in modern frameworks like React. My innovative design skills ensure intuitive and visually appealing user interfaces.
+          </p>
+        </div>
+
+        <div class="service-card fade-up">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Web development is my passion, blending creativity and technical skills. I excel in creating responsive, user-friendly websites with modern technologies like HTML, CSS, JavaScript, and React, ensuring top-notch performance and seamless user experience.
+          </p>
+        </div>
+
+        <div class="service-card fade-up" style="animation-delay: 0.2s">
+          <i class="fa-solid fa-server"></i>
+          <h2>MERN Stack Developer</h2>
+          <p>
+            As a MERN Stack Developer, I specialize in building full-stack web applications using MongoDB, Express.js, React, and Node.js. With expertise in creating dynamic, scalable, and responsive solutions, I design intuitive user interfaces and robust backends.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container fade-up">
+    <div class="footer-content">
+      <div class="nav-logo">GUNJAN</div>
+      <div class="footer-links">
+        <a href="https://github.com/gunjansinghpawar" class="magnetic-wrap" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/gunjansinghpawar/" class="magnetic-wrap" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gunjan Pawar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

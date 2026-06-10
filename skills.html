@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Gunjan Pawar</title>
+  <link rel="icon" type="image/x-icon" href="LOGO.SVG.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .page-header {
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .skill-card {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .skill-card i {
+      font-size: 4rem;
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+    .skill-card h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    @media (max-width: 992px) {
+      .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor"></div>
+  <div class="page-transition">
+    <div class="loader-text">
+      <span>S</span><span>K</span><span>I</span><span>L</span><span>L</span><span>S</span>
+    </div>
+  </div>
+
+  <nav class="navbar flex-between">
+    <a href="index.html" class="nav-logo">GUNJAN</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <div class="fs-menu">
+    <div class="fs-menu-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-header container fade-up">
+      <h1 class="title-lg">Tech <span class="text-accent">Stack</span></h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem 0;">Technologies and tools I use to bring ideas to life.</p>
+    </section>
+
+    <section class="section container">
+      <div class="skills-grid">
+        <div class="skill-card glass-card fade-up">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card glass-card fade-up" style="animation-delay: 0.1s">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card glass-card fade-up" style="animation-delay: 0.2s">
+          <i class="fa-brands fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card glass-card fade-up" style="animation-delay: 0.3s">
+          <i class="fa-brands fa-react"></i>
+          <h3>React JS</h3>
+        </div>
+        <div class="skill-card glass-card fade-up">
+          <i class="fa-brands fa-node"></i>
+          <h3>Node JS</h3>
+        </div>
+        <div class="skill-card glass-card fade-up" style="animation-delay: 0.1s">
+          <i class="fa-solid fa-server"></i>
+          <h3>Express JS</h3>
+        </div>
+        <div class="skill-card glass-card fade-up" style="animation-delay: 0.2s">
+          <i class="fa-solid fa-database"></i>
+          <h3>MongoDB</h3>
+        </div>
+        <div class="skill-card glass-card fade-up" style="animation-delay: 0.3s">
+          <i class="fa-brands fa-bootstrap"></i>
+          <h3>Bootstrap</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container fade-up">
+    <div class="footer-content">
+      <div class="nav-logo">GUNJAN</div>
+      <div class="footer-links">
+        <a href="https://github.com/gunjansinghpawar" class="magnetic-wrap" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/gunjansinghpawar/" class="magnetic-wrap" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gunjan Pawar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

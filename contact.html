@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Gunjan Pawar</title>
+  <link rel="icon" type="image/x-icon" href="LOGO.SVG.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .page-header {
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+    .contact-form button {
+      cursor: none;
+      align-self: flex-start;
+    }
+    .contact-info {
+      padding-left: 3rem;
+    }
+    .info-item {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .info-item i {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+    }
+    .info-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .info-item p {
+      color: var(--text-secondary);
+    }
+    @media (max-width: 992px) {
+      .contact-info {
+        padding-left: 0;
+        margin-top: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor"></div>
+  <div class="page-transition">
+    <div class="loader-text">
+      <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+    </div>
+  </div>
+
+  <nav class="navbar flex-between">
+    <a href="index.html" class="nav-logo">GUNJAN</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <div class="fs-menu">
+    <div class="fs-menu-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-header container fade-up">
+      <h1 class="title-lg">Let's <span class="text-accent">Talk</span></h1>
+    </section>
+
+    <section class="section container">
+      <div class="grid">
+        <div style="grid-column: span 7;" class="fade-up">
+          <form action="https://formsubmit.co/fyb138gunjan@gmail.com" method="POST" class="contact-form">
+            <input type="text" name="name" id="name" placeholder="Your Name" required />
+            <input type="email" name="email" id="email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" id="Message" placeholder="Your Message" required></textarea>
+            <div class="magnetic-wrap">
+              <button type="submit" class="btn btn-primary">
+                Send Message <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <div style="grid-column: span 5;" class="contact-info fade-up" style="animation-delay: 0.2s">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Address</h4>
+              <p>Amraiwadi, Ahmedabad, Gujarat, India, 380026</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 6356316676</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>fyb138gunjan@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-globe"></i>
+            <div>
+              <h4>Website</h4>
+              <p>www.gunjansinghpawar.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container fade-up">
+    <div class="footer-content">
+      <div class="nav-logo">GUNJAN</div>
+      <div class="footer-links">
+        <a href="https://github.com/gunjansinghpawar" class="magnetic-wrap" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/gunjansinghpawar/" class="magnetic-wrap" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/gunjansinghpawar" class="magnetic-wrap" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gunjan Pawar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
